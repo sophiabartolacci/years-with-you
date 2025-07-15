@@ -276,6 +276,8 @@
   margin-top: 1rem;
   font-family: var(--letter-font) !important;
   font-weight: bold;
+  align-self: flex-end;
+  margin-right: 2.5rem;
 }
 
 .letter p {
@@ -389,15 +391,79 @@
 
 @media (max-width: 768px) {
   .letter-intro {
-    padding: 40px 10px;
+    padding: 20px 10px;
   }
   
   .cssletter {
-    margin: 10dvh 0;
+    margin: 5dvh 0;
+  }
+  
+  .envelope {
+    width: 280px;
+    height: 180px;
+  }
+  
+  .letter {
+    width: 250px;
+    min-height: 150px;
+    padding: 2rem 1rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .letter p {
+    font-size: 1.2rem !important;
+  }
+  
+  .letter cite {
+    font-size: 1.8rem;
+    margin-right: 1rem;
   }
   
   .continue-btn {
-    padding: 12px 20px;
+    padding: 10px 18px;
     font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+  
+  .heart {
+    width: 60px;
+  }
+  
+  .heart-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .envelope {
+    width: 250px;
+    height: 160px;
+  }
+  
+  .letter {
+    width: 220px;
+    min-height: 130px;
+    padding: 1.5rem 0.8rem 0.8rem;
+  }
+  
+  .letter p {
+    font-size: 1rem !important;
+  }
+  
+  .letter cite {
+    font-size: 1.5rem;
+  }
+  
+  .continue-btn {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+  
+  .heart {
+    width: 50px;
+  }
+  
+  .heart-text {
+    font-size: 1rem;
   }
 }
