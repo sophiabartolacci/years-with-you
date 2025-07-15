@@ -10,75 +10,61 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/letter.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- Letter Animation Overlay -->
+    <div class="letter-intro" id="letterIntro">
+      <section class="cssletter">
+        <div class="envelope">
+          <button class="heart" id="openEnvelope" aria-label="Open Envelope">
+            <span class="heart-text">Open Me</span>
+          </button>
+          <div class="envelope-flap"></div>
+          <div class="envelope-folds">
+            <div class="envelope-left"></div>
+            <div class="envelope-right"></div>
+            <div class="envelope-bottom"></div>
+          </div>
+        </div>
+        <div class="letters">
+          <blockquote class="letter center" id="1" tabindex="0">
+            <button class="closeLetter" title="Close letter">Close letter</button>
+            <p>Every moment with you feels like a page from the most beautiful story ever written. This website is my love letter to us - to every laugh, every tear, and every grand adventure.</p>
+            <cite>Your Love</cite>
+            <button class="continue-btn" id="continueBtn">
+              Let's start from the beginning
+            </button>
+          </blockquote>
+        </div>
+      </section>
+    </div>
+
+    <!-- Main Website Content -->
     <header>
       <nav class="nav-bar">
         <ul class="nav-center">
-          <li><a href="/">Year 1</a></li>
+          <li><a href="./html/year1.html">Year 1</a></li>
           <li><a href="./html/year2.html">Year 2</a></li>
           <li><a href="./html/year3.html">Year 3</a></li>
           <li><a href="./html/gallery.html">Gallery</a></li>
         </ul>
-        <ul class="nav-right">
-          <li>
-            <b>
-              <label class="theme-switch">
-                <input type="checkbox" id="theme-toggle" />
-                <span class="slider"></span>
-              </label>
-            </b>
-          </li>
-        </ul>
+
       </nav>
     </header>
-    <h1>Years With You</h1>
-    <p class="subtitle">
-      More years, more memories
-    </p>
-    
-    <div class="story-map">
-      <!-- Year One Section -->
-      <div class="year-section" id="year-one">
-        <h2 class="year-title">Year One</h2>
-        
-        <div class="photo-story" data-story="1">
-          <img src="https://picsum.photos/400/280?random=1" alt="First memory" class="story-photo">
-          <div class="story-text">
-            <h3>Our First Date</h3>
-            <p>I was so nervous I spilled coffee on my shirt, but you just laughed and said it made me more human. That's when I knew you were special. We talked for hours about everything and nothing, and I didn't want the night to end.</p>
-            <span class="date">January 14, 2023</span>
-          </div>
-        </div>
-        
-        <div class="photo-story" data-story="2">
-          <img src="https://picsum.photos/400/280?random=2" alt="Second memory" class="story-photo">
-          <div class="story-text">
-            <h3>Weekend Getaway</h3>
-            <p>Our first trip together to the mountains. You insisted on taking the scenic route, and we got completely lost. But watching you navigate with that old paper map, completely determined, I fell a little deeper in love.</p>
-            <span class="date">March 18, 2023</span>
-          </div>
-        </div>
-        
-        <div class="photo-story" data-story="3">
-          <img src="https://picsum.photos/400/280?random=3" alt="Third memory" class="story-photo">
-          <div class="story-text">
-            <h3>Summer Picnic</h3>
-            <p>The day we spent at the park with homemade sandwiches and your terrible attempt at lemonade. We laid on that old blanket for hours, cloud-watching and making up stories. You said that cloud looked like our future together.</p>
-            <span class="date">July 22, 2023</span>
-          </div>
-        </div>
-      </div>
-      
 
+    <div class="hero-section">
+      <h1 class="hero-title">Years With You</h1>
+      <p class="subtitle">More years, more memories</p>
     </div>
 
     <footer>
       <img src="./images/heart.svg" alt="heart" class="heart-icon">
     </footer>
 
-    <script src="./script/darkMode.js"></script>
-    <script src="./script/storyMap.js"></script>
+
+    <script src="./script/letter.js"></script>
   </body>
 </html>
